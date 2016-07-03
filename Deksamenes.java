@@ -5,7 +5,7 @@
 
  * Creation Date : 03-07-2016
 
- * Last Modified : Sun 03 Jul 2016 06:19:53 PM EEST
+ * Last Modified : Sun 03 Jul 2016 06:31:09 PM EEST
 
  * Created By :	Stamatis Anoustis,Artemis Zografou
 
@@ -67,7 +67,7 @@ public class Deksamenes{
 				r = r + tanks.get(i).rate;
 				r_prev = r - tanks.get(i).rate;
 				i++;			
-				System.out.println("From "+t+" to "+t_next+" l= "+ l +" r= "+ r+" "+i);
+		//		System.out.println("From "+t+" to "+t_next+" l= "+ l +" r= "+ r+" "+i);
 				t = t_next;
 			}
 			float h,result;
@@ -79,7 +79,7 @@ public class Deksamenes{
 			{
 				h = (l - K)/r_prev;
 				result = (float)t_next - h;
-				System.out.println(h+" "+result);
+				System.out.println(result);
 			}	
 
 		}	
