@@ -5,7 +5,7 @@
 
  * Creation Date : 03-07-2016
 
- * Last Modified : Sun 03 Jul 2016 06:31:09 PM EEST
+ * Last Modified : Tue 05 Jul 2016 08:39:39 PM EEST
 
  * Created By :	Stamatis Anoustis,Artemis Zografou
 
@@ -70,16 +70,18 @@ public class Deksamenes{
 		//		System.out.println("From "+t+" to "+t_next+" l= "+ l +" r= "+ r+" "+i);
 				t = t_next;
 			}
-			float h,result;
+			double h,result;
 			if (i >= 2*N ){
-				result = (float)-1;
-				System.out.println(result);
+				System.out.println("Overflow");
 			}
 			 else
 			{
-				h = (l - K)/r_prev;
-				result = (float)t_next - h;
+				h = ((double)(l - K))/((double)r_prev);
+				System.out.println(h);
+				result = (double)t_next - h;
 				System.out.println(result);
+				double roundOff = Math.round(result * 100.0) / 100.0;
+				System.out.println(roundOff);
 			}	
 
 		}	
